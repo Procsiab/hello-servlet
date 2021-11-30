@@ -1,8 +1,8 @@
 FROM centos:centos7
 LABEL maintainer "Lorenzo Prosseda <lerokamut@gmail.com>"
 
-ARG java_sdk=8.0.242-amzn
-ARG gradle_version=6.2.2
+ARG java_sdk=8.312.07.1-amzn
+ARG gradle_version=6.9.1
 
 # Install tools
 RUN yum install -y unzip zip tmux which && yum clean all

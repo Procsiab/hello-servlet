@@ -20,8 +20,8 @@ podman build -t sample-java-war .
 You can provide the following build variables to customize the JDK and Gradle 
 versions:
 
-- `java_sdk` (defaults to 8.0.242)
-- `gradle_version` (defaults to 6.2.2)
+- `java_sdk` (defaults to 8.312.07.1)
+- `gradle_version` (defaults to 6.9.1)
 
 ## Run the environment
 
@@ -38,8 +38,8 @@ To obtain the WAR for this sample project, issue the following commands inside
 the container:
 
 ```bash
-gradle wrapper --gradle-version=6.2.2
+gradle wrapper --gradle-version=6.9.1
 ./gradlew war
 ```
 
-The product of the task `war` is located under *project/build/libs/workdir.war*
+The product of the task `war` is located under *project/build/libs/hello-servlet.war*
